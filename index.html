@@ -3,17 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, follow" />
-    <meta name="googlebot" content="noindex, follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="theme-color" content="#071319" />
     <meta
       name="description"
-      content="The official GitHub portal for ZeroedTools, a free browser toolbox for FPS players."
+      content="Official ZeroedTools gateway: free browser FPS sensitivity, aim, reaction, mouse, controller, display tools and global FPS news."
     />
-    <title>ZeroedTools — Official GitHub Portal</title>
-    <link rel="canonical" href="https://dfaccount.com/en/" />
+    <title>ZeroedTools — Free FPS Tools for Aim, Sensitivity &amp; Gear</title>
+    <link rel="canonical" href="https://snowfallseason.github.io/zeroedtools/" />
     <link rel="icon" href="assets/logo-512.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ZeroedTools — Free FPS Tools" />
+    <meta
+      property="og:description"
+      content="Convert sensitivity, train aim and test gaming gear directly in your browser."
+    />
+    <meta property="og:url" content="https://snowfallseason.github.io/zeroedtools/" />
+    <meta property="og:image" content="https://snowfallseason.github.io/zeroedtools/assets/logo-512.png" />
+    <meta name="twitter:card" content="summary" />
     <style>
       :root {
         color-scheme: dark;
@@ -305,6 +314,194 @@
         color: var(--accent);
       }
 
+      .quick-nav,
+      .tag-list,
+      .quick-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .quick-nav {
+        position: relative;
+        z-index: 1;
+        margin-top: 24px;
+      }
+
+      .quick-nav a,
+      .quick-links a,
+      .tag {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 9px 12px;
+        color: #bcebf0;
+        background: rgba(44, 187, 208, 0.04);
+        font-size: 0.8rem;
+        text-decoration: none;
+      }
+
+      .quick-nav a:hover,
+      .quick-links a:hover {
+        border-color: var(--line-strong);
+        background: var(--accent-soft);
+      }
+
+      .content-section {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: clamp(26px, 5vw, 48px);
+        background: linear-gradient(145deg, rgba(13, 29, 37, 0.96), rgba(7, 15, 20, 0.94));
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+      }
+
+      .section-kicker {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font: 700 0.74rem/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .content-section h2 {
+        max-width: 780px;
+        margin: 0;
+        font-size: clamp(1.65rem, 4vw, 2.7rem);
+        line-height: 1.08;
+        letter-spacing: -0.035em;
+      }
+
+      .section-intro {
+        max-width: 820px;
+        margin: 16px 0 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .card-grid,
+      .tool-directory,
+      .info-grid {
+        display: grid;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .tool-directory,
+      .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .detail-card,
+      .tool-category,
+      .info-card,
+      details {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(44, 187, 208, 0.035);
+      }
+
+      .detail-card,
+      .tool-category,
+      .info-card {
+        padding: 22px;
+      }
+
+      .detail-card h3,
+      .tool-category h3,
+      .info-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+      }
+
+      .detail-card p,
+      .tool-category p,
+      .info-card p,
+      .info-card li {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.68;
+      }
+
+      .info-card p + p {
+        margin-top: 14px;
+      }
+
+      .info-card ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .category-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .category-links a {
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        padding: 9px 10px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .category-links a:hover {
+        border-color: var(--line-strong);
+        color: #bcebf0;
+      }
+
+      .tag-list,
+      .quick-links {
+        margin-top: 24px;
+      }
+
+      .tag {
+        color: var(--text);
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      details {
+        padding: 0 18px;
+      }
+
+      summary {
+        padding: 18px 0;
+        cursor: pointer;
+        font-weight: 750;
+      }
+
+      details p {
+        margin: -2px 0 20px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .notice {
+        margin-top: 26px;
+        border: 1px solid var(--line-strong);
+        border-radius: 14px;
+        padding: 24px;
+        background: linear-gradient(135deg, rgba(44, 187, 208, 0.09), rgba(5, 11, 15, 0.68));
+      }
+
+      .notice p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
       footer {
         display: flex;
         justify-content: space-between;
@@ -321,6 +518,12 @@
 
       @media (max-width: 800px) {
         .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .card-grid,
+        .tool-directory,
+        .info-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -349,6 +552,10 @@
         .links {
           grid-template-columns: 1fr;
         }
+
+        .category-links {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -370,13 +577,22 @@
           <p class="eyebrow">Zeroed // Public Uplink</p>
           <h1>Free browser tools for FPS players.</h1>
           <p class="lede">
-            ZeroedTools brings sensitivity conversion, aim practice, controller diagnostics,
-            mouse checks, and practical FPS news together in one independent toolbox.
+            ZeroedTools brings cross-game sensitivity conversion, aim and reaction training,
+            mouse and controller diagnostics, display checks, performance tests, and global
+            FPS news together in one independent platform.
           </p>
           <div class="actions">
             <a class="button primary" href="https://dfaccount.com/en/">Open the official site&nbsp; ↗</a>
-            <a class="button" href="https://dfaccount.com/en/news">Read the latest news</a>
+            <a class="button" href="https://dfaccount.com/en/sensitivity/">Convert sensitivity</a>
           </div>
+          <nav class="quick-nav" aria-label="Page sections">
+            <a href="#project">Project</a>
+            <a href="#tool-directory">Tool directory</a>
+            <a href="#supported-games">Games</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#languages-news">Languages &amp; news</a>
+            <a href="#faq">FAQ</a>
+          </nav>
         </section>
 
         <div class="grid">
@@ -384,19 +600,19 @@
             <h2 id="tools-heading">Popular tools</h2>
             <p>Run each tool in your browser on the official ZeroedTools website.</p>
             <div class="links">
-              <a class="tool-link" href="https://dfaccount.com/en/sensitivity">
+              <a class="tool-link" href="https://dfaccount.com/en/sensitivity/">
                 <strong>Sensitivity Converter</strong>
                 <span>Match physical aim across supported FPS games.</span>
               </a>
-              <a class="tool-link" href="https://dfaccount.com/en/aim-trainer">
+              <a class="tool-link" href="https://dfaccount.com/en/aim-trainer/">
                 <strong>Aim Trainer</strong>
                 <span>Practice precision and reaction directly in the browser.</span>
               </a>
-              <a class="tool-link" href="https://dfaccount.com/en/controller-test">
+              <a class="tool-link" href="https://dfaccount.com/en/controller-test/">
                 <strong>Controller Test</strong>
                 <span>Inspect stick input, drift, and controller behavior.</span>
               </a>
-              <a class="tool-link" href="https://dfaccount.com/en/mouse-test">
+              <a class="tool-link" href="https://dfaccount.com/en/mouse-test/">
                 <strong>Mouse Test</strong>
                 <span>Check clicks and spot suspicious switch behavior.</span>
               </a>
@@ -413,18 +629,390 @@
               <a class="route" href="https://dfaccount.com/en/">
                 <span>Official website</span><span>↗</span>
               </a>
-              <a class="route" href="https://dfaccount.com/en/news">
+              <a class="route" href="https://dfaccount.com/en/news/">
                 <span>News &amp; guides</span><span>↗</span>
               </a>
-              <a class="route" href="https://dfaccount.com/en/about">
+              <a class="route" href="https://dfaccount.com/en/about/">
                 <span>About</span><span>↗</span>
               </a>
-              <a class="route" href="https://dfaccount.com/en/contact">
+              <a class="route" href="https://dfaccount.com/en/contact/">
                 <span>Contact</span><span>↗</span>
               </a>
             </nav>
           </aside>
         </div>
+
+        <section id="project" class="content-section">
+          <p class="section-kicker">01 / Project positioning</p>
+          <h2>One practical workspace for the settings behind competitive FPS play</h2>
+          <p class="section-intro">
+            FPS setup work is usually scattered across a calculator, a click tester, a controller
+            utility, a monitor page, and several game-specific references. ZeroedTools organizes those
+            jobs around questions players actually ask: Is my sensitivity equivalent in another game?
+            Is my input device behaving correctly? Is my display refreshing as expected? Can I reproduce
+            the same measurement after changing hardware, firmware, or a game setting?
+          </p>
+          <div class="card-grid">
+            <article class="detail-card">
+              <h3>Comparable results</h3>
+              <p>
+                Use physical cm/360, eDPI where appropriate, and repeatable browser tests instead of
+                relying only on a slider number or an impression that a setup “feels different.”
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Immediate access</h3>
+              <p>
+                Open a focused diagnostic on the computer you are setting up without adding another
+                software installation. This is useful at home, at a LAN setup, or after changing a peripheral.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Tools with current context</h3>
+              <p>
+                The global news center tracks noteworthy patches, competitive events, and releases so a
+                new result or setting change can be viewed alongside what changed in the games players follow.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="tool-directory" class="content-section">
+          <p class="section-kicker">02 / Tool directory</p>
+          <h2>FPS tools grouped by the problem they solve</h2>
+          <p class="section-intro">
+            Every destination below opens the live English version of ZeroedTools. The tools are designed
+            for focused checks, allowing a player to start with one measurement and move to a related test
+            only when the first result suggests it is useful.
+          </p>
+          <div class="tool-directory">
+            <article class="tool-category">
+              <h3>Sensitivity, cm/360, aim, and reaction</h3>
+              <p>
+                Convert sensitivity while preserving the same physical turn distance, compare eDPI inside
+                the same game, and then test the result through repeatable aim and reaction tasks instead of
+                copying one raw slider value between unrelated game engines.
+              </p>
+              <div class="category-links">
+                <a href="https://dfaccount.com/en/sensitivity/">Sensitivity converter</a>
+                <a href="https://dfaccount.com/en/aim-trainer/">Aim trainer</a>
+                <a href="https://dfaccount.com/en/reaction-test/">Reaction time test</a>
+                <a href="https://dfaccount.com/en/footstep-test/">Footstep audio test</a>
+              </div>
+            </article>
+
+            <article class="tool-category">
+              <h3>Gaming mouse diagnostics</h3>
+              <p>
+                Check polling behavior, estimate DPI movement, measure clicks per second, and look for
+                unintended double clicks. These tests help separate an in-game setting problem from a
+                peripheral, firmware, connection, or operating-system input problem.
+              </p>
+              <div class="category-links">
+                <a href="https://dfaccount.com/en/mouse-test/">Mouse test</a>
+                <a href="https://dfaccount.com/en/mouse-polling-rate-test/">Polling rate test</a>
+                <a href="https://dfaccount.com/en/mouse-dpi-test/">Mouse DPI test</a>
+                <a href="https://dfaccount.com/en/cps-test/">CPS test</a>
+                <a href="https://dfaccount.com/en/mouse-double-click-test/">Double-click test</a>
+              </div>
+            </article>
+
+            <article class="tool-category">
+              <h3>Keyboard and controller checks</h3>
+              <p>
+                Visualize keyboard input, controller buttons, analog stick position, drift, and deadzone
+                behavior. Use these pages when calibrating a new controller, checking an aging stick, or
+                confirming that a key and button combination is detected consistently.
+              </p>
+              <div class="category-links">
+                <a href="https://dfaccount.com/en/keyboard-test/">Keyboard tester</a>
+                <a href="https://dfaccount.com/en/controller-test/">Controller tester</a>
+                <a href="https://dfaccount.com/en/controller-stick-drift-test/">Stick drift test</a>
+                <a href="https://dfaccount.com/en/controller-deadzone-calculator/">Deadzone calculator</a>
+              </div>
+            </article>
+
+            <article class="tool-category">
+              <h3>Display and performance tests</h3>
+              <p>
+                Confirm reported refresh rate, inspect frame delivery, and display controlled patterns for
+                dead pixels, ghosting, and backlight bleed. Browser checks do not replace laboratory hardware,
+                but they provide a useful and repeatable first pass for troubleshooting.
+              </p>
+              <div class="category-links">
+                <a href="https://dfaccount.com/en/fps-test/">FPS and frame test</a>
+                <a href="https://dfaccount.com/en/refresh-rate-test/">Refresh rate test</a>
+                <a href="https://dfaccount.com/en/monitor-test/">Monitor test</a>
+                <a href="https://dfaccount.com/en/dead-pixel-test/">Dead pixel test</a>
+                <a href="https://dfaccount.com/en/monitor-ghosting-test/">Ghosting test</a>
+                <a href="https://dfaccount.com/en/backlight-bleed-test/">Backlight bleed test</a>
+              </div>
+            </article>
+
+            <article class="tool-category">
+              <h3>Visibility and perception</h3>
+              <p>
+                Explore enemy visibility, contrast, directional audio, and motion-related display behavior
+                in controlled pages. The goal is to compare configurations and recognize what changes when
+                a visual or audio setting is adjusted.
+              </p>
+              <div class="category-links">
+                <a href="https://dfaccount.com/en/visibility-test/">Enemy visibility lab</a>
+                <a href="https://dfaccount.com/en/footstep-test/">Directional audio test</a>
+                <a href="https://dfaccount.com/en/monitor-test/">Display test suite</a>
+              </div>
+            </article>
+
+            <article class="tool-category">
+              <h3>Delta Force companion area</h3>
+              <p>
+                Alongside the general FPS toolkit, ZeroedTools maintains a separate Delta Force community
+                vertical with gunsmith data, maps, codes, operators, and community features. This is an
+                additional area rather than the main identity of the cross-game tools platform.
+              </p>
+              <div class="category-links">
+                <a href="https://dfaccount.com/en/delta-force/">Delta Force hub</a>
+                <a href="https://dfaccount.com/en/gunsmith/">Gunsmith</a>
+                <a href="https://dfaccount.com/en/maps/">Maps</a>
+                <a href="https://dfaccount.com/en/operators/">Operators</a>
+                <a href="https://dfaccount.com/en/codes/">Codes</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="supported-games" class="content-section">
+          <p class="section-kicker">03 / Supported games</p>
+          <h2>Cross-game sensitivity support for widely played shooters</h2>
+          <p class="section-intro">
+            The sensitivity workspace covers popular competitive FPS titles that use different internal
+            sensitivity scales. Matching cm/360 provides a physical reference when moving between games,
+            while eDPI remains most meaningful when two settings are compared inside the same title.
+          </p>
+          <div class="tag-list" aria-label="Supported games">
+            <span class="tag">Valorant</span>
+            <span class="tag">Counter-Strike 2</span>
+            <span class="tag">Apex Legends</span>
+            <span class="tag">Call of Duty</span>
+            <span class="tag">Overwatch 2</span>
+            <span class="tag">PUBG</span>
+            <span class="tag">Fortnite</span>
+            <span class="tag">Rainbow Six Siege</span>
+            <span class="tag">The Finals</span>
+            <span class="tag">Delta Force</span>
+          </div>
+          <div class="notice">
+            <p>
+              A converted value is a measured starting point. Field of view, ADS behavior, scope multipliers,
+              acceleration settings, and engine-specific input handling can still affect perception. Confirm
+              the output with an in-game turn-distance check and make deliberate adjustments when necessary.
+            </p>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="content-section">
+          <p class="section-kicker">04 / How it works</p>
+          <h2>Browser measurements, transparent limits, and no required installation</h2>
+          <div class="info-grid">
+            <article class="info-card">
+              <h3>What happens in the browser</h3>
+              <p>
+                Interactive tests use browser input, timing, graphics, or gamepad capabilities to calculate
+                and display a result on the page. Sensitivity tools apply documented conversion relationships
+                and physical-distance calculations. Supported preferences can be reused without turning a
+                quick test into a separate software installation workflow.
+              </p>
+              <p>
+                Browser timing depends on the device, operating system, browser, background load, and display
+                pipeline. ZeroedTools therefore presents these utilities as practical diagnostics rather than
+                laboratory-certified instruments.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Privacy and account requirements</h3>
+              <p>
+                The core public tests can be opened without a download or paid subscription. Test input used
+                for an interactive browser measurement is handled by the tool running on the page. Standard
+                site analytics, optional online features, and information a visitor intentionally submits are
+                described in the official privacy policy.
+              </p>
+              <div class="quick-links">
+                <a href="https://dfaccount.com/en/privacy/">Privacy policy</a>
+                <a href="https://dfaccount.com/en/about/">About ZeroedTools</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="use-cases" class="content-section">
+          <p class="section-kicker">05 / Typical use cases</p>
+          <h2>When a quick, repeatable test is more useful than guessing</h2>
+          <div class="card-grid">
+            <article class="detail-card">
+              <h3>Switching games</h3>
+              <p>
+                Record mouse DPI and source sensitivity, convert to the target game, then verify the result
+                in-game. A physical cm/360 reference avoids assuming equal slider numbers produce equal rotation.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Checking new hardware</h3>
+              <p>
+                Test mouse polling, click behavior, keyboard input, controller drift, or reported refresh rate
+                after a new device, firmware update, cable change, or operating-system adjustment.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Narrowing down inconsistency</h3>
+              <p>
+                Run related tests one at a time to separate sensitivity, input, frame pacing, and display
+                symptoms before changing several settings at once and losing a useful baseline.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="languages-news" class="content-section">
+          <p class="section-kicker">06 / Languages and news</p>
+          <h2>Localized tool pages and a global FPS news center</h2>
+          <p class="section-intro">
+            ZeroedTools provides locale-specific pages in English, Simplified Chinese, German, French,
+            Portuguese, Spanish, Russian, Japanese, Korean, and Indonesian. Stable language paths make it
+            possible to share the relevant version directly instead of relying on a browser translation overlay.
+          </p>
+          <p class="section-intro">
+            The news center covers globally relevant FPS patches, esports events, releases, and service changes.
+            News remains separate from the core tools so a visitor can either open a measurement immediately or
+            read the context behind an update that may affect settings, maps, weapons, or competitive play.
+          </p>
+          <div class="quick-links">
+            <a href="https://dfaccount.com/en/news/">Global FPS news</a>
+            <a href="https://dfaccount.com/en/">English</a>
+            <a href="https://dfaccount.com/zh/">简体中文</a>
+            <a href="https://dfaccount.com/de/">Deutsch</a>
+            <a href="https://dfaccount.com/fr/">Français</a>
+            <a href="https://dfaccount.com/pt/">Português</a>
+            <a href="https://dfaccount.com/es/">Español</a>
+            <a href="https://dfaccount.com/ru/">Русский</a>
+            <a href="https://dfaccount.com/ja/">日本語</a>
+            <a href="https://dfaccount.com/ko/">한국어</a>
+            <a href="https://dfaccount.com/id/">Bahasa Indonesia</a>
+          </div>
+        </section>
+
+        <section id="audience" class="content-section">
+          <p class="section-kicker">07 / Who it is for</p>
+          <h2>Useful from a first setup check to repeatable competitive tuning</h2>
+          <div class="info-grid">
+            <article class="info-card">
+              <h3>Players and teams</h3>
+              <ul>
+                <li>FPS players moving between games, platforms, or devices</li>
+                <li>Competitive players documenting a stable setup</li>
+                <li>Controller players checking stick drift and deadzones</li>
+                <li>Teams standardizing simple pre-event equipment checks</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <h3>Hardware and community use</h3>
+              <ul>
+                <li>PC builders confirming basic input and display behavior</li>
+                <li>Peripheral owners troubleshooting a suspected fault</li>
+                <li>Coaches explaining sensitivity and measurement concepts</li>
+                <li>Community members sharing a direct, repeatable diagnostic</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="quick-entry" class="content-section">
+          <p class="section-kicker">08 / Quick entry</p>
+          <h2>Open the live tool you need</h2>
+          <div class="quick-links">
+            <a href="https://dfaccount.com/en/">All FPS tools</a>
+            <a href="https://dfaccount.com/en/sensitivity/">Sensitivity converter</a>
+            <a href="https://dfaccount.com/en/aim-trainer/">Aim trainer</a>
+            <a href="https://dfaccount.com/en/reaction-test/">Reaction time</a>
+            <a href="https://dfaccount.com/en/mouse-polling-rate-test/">Polling rate</a>
+            <a href="https://dfaccount.com/en/mouse-dpi-test/">Mouse DPI</a>
+            <a href="https://dfaccount.com/en/controller-stick-drift-test/">Stick drift</a>
+            <a href="https://dfaccount.com/en/refresh-rate-test/">Refresh rate</a>
+            <a href="https://dfaccount.com/en/monitor-ghosting-test/">Monitor ghosting</a>
+            <a href="https://dfaccount.com/en/visibility-test/">Enemy visibility</a>
+            <a href="https://dfaccount.com/en/news/">Global FPS news</a>
+          </div>
+        </section>
+
+        <section id="faq" class="content-section">
+          <p class="section-kicker">09 / Frequently asked questions</p>
+          <h2>Common questions about ZeroedTools</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What is ZeroedTools?</summary>
+              <p>
+                ZeroedTools is an independent collection of browser-based FPS tools. It includes cross-game
+                sensitivity conversion, aim and reaction tests, mouse, keyboard and controller diagnostics,
+                display checks, and a global FPS news section.
+              </p>
+            </details>
+            <details>
+              <summary>Do I need to download or install anything?</summary>
+              <p>
+                No dedicated application installation is required for the public web tools. Open the relevant
+                page in a modern browser and follow the instructions shown for that test.
+              </p>
+            </details>
+            <details>
+              <summary>Why use cm/360 instead of copying the same sensitivity number?</summary>
+              <p>
+                Games interpret sensitivity sliders at different rates. Cm/360 measures the physical mouse
+                distance required for a full rotation and creates a shared reference across games. eDPI is most
+                useful for comparing settings inside the same title.
+              </p>
+            </details>
+            <details>
+              <summary>Are browser hardware tests perfectly accurate?</summary>
+              <p>
+                They are practical diagnostics, not laboratory instruments. Results can be influenced by browser
+                timing, firmware, operating-system settings, background load, and the display pipeline. Repeat a
+                test under consistent conditions and confirm important findings with device or in-game settings.
+              </p>
+            </details>
+            <details>
+              <summary>Is ZeroedTools affiliated with a game publisher?</summary>
+              <p>
+                No. ZeroedTools is independent and fan-built. It is not endorsed by Riot Games, Valve, Electronic
+                Arts, Activision, Blizzard, Krafton, Epic Games, Ubisoft, Embark Studios, TiMi Studio Group,
+                Tencent, or other game publishers. Game names and trademarks belong to their respective owners.
+              </p>
+            </details>
+            <details>
+              <summary>Is the main ZeroedTools application open-source?</summary>
+              <p>
+                No. The live application is closed-source. This public repository contains only this static brand
+                gateway and links to the live service; it does not contain the application source code.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section id="independence" class="content-section">
+          <p class="section-kicker">10 / Independence and contact</p>
+          <h2>A tools platform, not an account marketplace</h2>
+          <div class="notice">
+            <p>
+              ZeroedTools does not sell game accounts. The domain name does not represent account trading
+              services. The project is an independent FPS tools and information platform, and all referenced
+              game names, logos, and trademarks remain the property of their respective owners. To report a
+              problem, suggest a tool improvement, or ask about site content, use the official contact and
+              feedback pages.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="https://dfaccount.com/en/feedback/">Send feedback</a>
+              <a class="button" href="https://dfaccount.com/en/contact/">Contact ZeroedTools</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer>
