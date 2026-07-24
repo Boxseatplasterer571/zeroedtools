@@ -1,0 +1,10 @@
+*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/SECURITY.md
+!/index.html
+!/404.html
+!/robots.txt
+!/assets/
+!/assets/**
